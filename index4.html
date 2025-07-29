@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style3.css">
+  <script src="alert.js"></script>
+  <title>Formulario Registro</title>
+</head>
+<body>
+  <form action="registroC.php" method="POST" class="form-register">
+    <h4>Formulario Registro</h4>
+    <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre ">
+    <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+    <label for="tipoDocumento">Seleccione su de documento:</label>
+    <select class="controls" name="tipoDocumento" id="tipoDocumento">
+      <option value="">Seleccione...</option>
+      <option value="cedula_ciudadania">Cédula de ciudadanía</option>
+      <option value="cedula_extranjero">Cédula de extranjería</option>
+      <option value="pasaporte">Pasaporte</option>
+    </select>
+    <input class="controls" type="text" name="numeroDocumento" id="numeroDocumento" placeholder="Ingrese su numero de Documento">
+      <!-- Menú desplegable para seleccionar Departamento -->
+      <label for="departamento">Seleccione su Departamento:</label>
+      <select class="controls" name="departamento" id="departamento" onchange="updateCities()">
+        <option value="">Seleccione...</option>
+        <option value="amazonas">Amazonas</option>
+        <option value="antioquia">Antioquia</option>
+        <option value="arauca">Arauca</option>
+        <option value="atlantico">Atlántico</option>
+        <option value="bolivar">Bolívar</option>
+        <option value="boyaca">Boyacá</option>
+        <option value="caldas">Caldas</option>
+        <option value="caqueta">Caquetá</option>
+        <option value="casanare">Casanare</option>
+        <option value="cauca">Cauca</option>
+        <option value="cesar">Cesar</option>
+        <option value="choco">Chocó</option>
+        <option value="cordoba">Córdoba</option>
+        <option value="cundinamarca">Cundinamarca</option>
+        <option value="guainia">Guainía</option>
+        <option value="guaviare">Guaviare</option>
+        <option value="huila">Huila</option>
+        <option value="la_guajira">La Guajira</option>
+        <option value="magdalena">Magdalena</option>
+        <option value="meta">Meta</option>
+        <option value="narino">Nariño</option>
+        <option value="norte_santander">Norte de Santander</option>
+        <option value="putumayo">Putumayo</option>
+        <option value="quindio">Quindío</option>
+        <option value="risaralda">Risaralda</option>
+        <option value="san_andres">San Andrés y Providencia</option>
+        <option value="santander">Santander</option>
+        <option value="sucre">Sucre</option>
+        <option value="tolima">Tolima</option>
+        <option value="valle">Valle del Cauca</option>
+        <option value="vaupes">Vaupés</option>
+        <option value="vichada">Vichada</option>
+      </select>
+      <!-- Menú desplegable para seleccionar Ciudad -->
+    <label for="ciudad">Seleccione su Ciudad:</label>
+    <select class="controls" name="ciudad" id="ciudad">
+      <option value="">Seleccione...</option>
+    </select>
+    <script src="cuidades.js"></script>
+        <input class="controls" type="text" name="correo" id="correo" placeholder="Ingrese su Correo">
+        <input class="controls" type="text" name="direccion" id="direccion" placeholder="Ingrese su direccion">
+    <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Ingrese su Contraseña">
+    <p>Estoy de acuerdo con <a href="Index3.html">Terminos y Condiciones</a></p>
+    <button class="botons" type="submit">Registrar</button>
+  </form>
+
+</body>
+</html>
