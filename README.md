@@ -16,5 +16,5 @@ Esta es la versión web de Ropa F, un proyecto desarrollado como parte de mi for
 - HTML5  
 - CSS3  
 - JavaScript 
-}
+
 
